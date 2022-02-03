@@ -3,8 +3,9 @@ function initMap() {
   // Reference for attempted marker: https://developers.google.com/maps/documentation/javascript/examples/marker-simple
   const London = { lat: 51.5072, lng: 0.1276 }
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 8,
     center: London,
+    zoom: 8,
+    mapTypeId: "terrain"
   });
   
   new google.maps.Marker ({
@@ -12,6 +13,9 @@ function initMap() {
     map,
     title: "Welcome to London!"
   });
+  
+  map.setTilt(45)
+  
 }
   
  // Below was my attempt at creating a triangle. I used https://developers.google.com/maps/documentation/javascript/examples/polygon-simple for reference
