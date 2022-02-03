@@ -5,12 +5,13 @@ function initMap() {
   // The map, centered
    const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 11,
-    center: { lat: 51.5072, lng: 0.1276 },
+    center: London,
   });
   // The marker, positioned at London
-  const marker = new google.maps.Marker({
-    position: London, GB,
-    map: map,
+  new google.maps.Marker({
+    position: London,
+    map,
+    title: "London!",
   });
 }
 
