@@ -1,7 +1,7 @@
 function initMap() {
   // The map, centered on London
   // Reference for attempted marker: https://developers.google.com/maps/documentation/javascript/examples/marker-simple
-  const London = { lat: 51.5072, lng: 0.1276 }
+  const London = { lat: 51.5072, lng: 0.1276 };
   const map = new google.maps.Map(document.getElementById("map"), {
     center: London,
     zoom: 8,
